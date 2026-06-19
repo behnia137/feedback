@@ -54,10 +54,3 @@ body:
       placeholder: you@example.com
     validations:
       required: false
-  - type: checkboxes
-    id: ack
-    attributes:
-      label: Before you submit
-      options:
-        - label: I understand this feedback will be posted publicly (so I won't include private details I don't want shared).
-          required: true
