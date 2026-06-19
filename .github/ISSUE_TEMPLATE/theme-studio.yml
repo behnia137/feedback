@@ -1,6 +1,5 @@
 name: 💬 BENIX Theme Studio — feedback
 description: Report a bug or suggest an idea for BENIX Theme Studio
-title: "[Theme Studio] "
 labels: ["theme-studio"]
 body:
   - type: markdown
