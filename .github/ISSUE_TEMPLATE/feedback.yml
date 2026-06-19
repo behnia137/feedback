@@ -1,48 +1,63 @@
-name: Feedback
-description: Report a bug or suggest an idea for one of my projects
+name: 💬 Share feedback
+description: Report a bug or suggest an idea — for any of my projects
 title: "[Feedback] "
-# Per-app deep links can pre-select the project and add a triage label, e.g.
+# Per-app deep links pre-select the project, e.g.
 #   .../issues/new?template=feedback.yml&project=BENIX+Theme+Studio
-# (the `project` query param matches the dropdown id below and pre-selects it).
+# The `project` query param must match the dropdown `id` below.
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time! Pick the project, tell me what's up, and submit.
-        No GitHub experience needed — just fill the fields below.
+        ### Thanks for helping make things better 🙌
+        Just a few quick fields — no GitHub experience needed.
+        Screenshots or a short clip help a lot: drag them straight into **Tell me more**.
   - type: dropdown
     id: project
     attributes:
-      label: Project
-      description: Which project is this about?
+      label: 📦 Which project?
+      description: Pick the one this is about.
       options:
         - BENIX Theme Studio
-        # TODO: add your other projects here, one per line
+        # TODO: add your other projects here, one per line (plain text — keep it deep-link friendly)
         - Other / not listed
     validations:
       required: true
   - type: dropdown
     id: type
     attributes:
-      label: Type
+      label: 🏷️ What kind of feedback?
       options:
-        - Bug
-        - Idea / feature request
-        - Question
+        - 🐞 Bug — something's broken or looks wrong
+        - 💡 Idea — a feature or improvement
+        - ❓ Question — how does this work?
     validations:
       required: true
   - type: textarea
     id: details
     attributes:
-      label: Details
-      description: What happened, or what would you like to see? For a bug, steps to reproduce help a lot.
-      placeholder: Describe it here…
+      label: ✍️ Tell me more
+      description: What happened, or what would you like to see? For a bug, what did you *expect* vs. what actually happened?
+      placeholder: |
+        Example
+        ───────
+        When I export a theme, the accent color looks different in Power BI than in the preview.
+        • Expected: the same color as the preview
+        • Saw: a slightly darker shade
+        • Browser / OS: Chrome on Windows 11
     validations:
       required: true
   - type: input
     id: contact
     attributes:
-      label: Contact (optional)
+      label: 📫 Contact (optional)
       description: Email or handle if you'd like a reply. Leave blank to stay anonymous.
+      placeholder: you@example.com
     validations:
       required: false
+  - type: checkboxes
+    id: ack
+    attributes:
+      label: Before you submit
+      options:
+        - label: I understand this feedback will be posted publicly (so I won't include private details I don't want shared).
+          required: true

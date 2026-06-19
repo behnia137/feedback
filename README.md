@@ -1,23 +1,72 @@
-# Feedback
+<div align="center">
 
-One place to report bugs and suggest ideas for my projects.
+# 💬 Feedback
 
-**→ [Leave feedback](../../issues/new?template=feedback.yml)** — pick your project, no GitHub know-how needed.
+### Found a bug? Have an idea? Tell me here — it takes a minute.
 
-For open-ended ideas or questions, use [Discussions](../../discussions).
+No technical know-how needed — pick a project, type your thoughts, hit submit.
+
+<br>
+
+[![Leave feedback](https://img.shields.io/badge/✍️%20%20Leave%20feedback-2ea44f?style=for-the-badge&logo=github&logoColor=white)](https://github.com/behnia137/feedback/issues/new?template=feedback.yml)
+&nbsp;&nbsp;
+[![Browse ideas](https://img.shields.io/badge/💡%20%20Browse%20ideas-1f6feb?style=for-the-badge&logo=github&logoColor=white)](https://github.com/behnia137/feedback/discussions)
+
+<br>
+
+![Open items](https://img.shields.io/github/issues/behnia137/feedback?label=open%20items&color=2ea44f&style=flat-square)
+![Last activity](https://img.shields.io/github/last-commit/behnia137/feedback?label=last%20activity&color=1f6feb&style=flat-square)
+
+</div>
 
 ---
 
-## For maintainer
+## 🎯 What can I share?
 
-Feedback for every project lands here as a GitHub Issue, sorted by the **Project**
-dropdown in the form. Each app links straight to the form with its project
-pre-selected:
+|  | Use it when… |
+|:--|:--|
+| 🐞 **Bug** | something's broken or behaving oddly |
+| 💡 **Idea** | you'd love a new feature or an improvement |
+| ❓ **Question** | you're not sure how something works |
+
+Every project I build links here, so this is the **one place** for all of it — and I read everything. 🙌
+
+## 🚀 How it works
+
+1. Click **[✍️ Leave feedback](https://github.com/behnia137/feedback/issues/new?template=feedback.yml)** (or the green button above)
+2. Pick the **project** and the kind of feedback
+3. Describe it — screenshots and clips are very welcome (just drag them in)
+4. Submit. Done! Add your email only if you'd like a reply.
+
+> 💬 Prefer to think out loud or see what others have suggested? Head to **[Discussions](https://github.com/behnia137/feedback/discussions)**.
+
+<div align="center">
+
+<br>
+
+**Thanks for helping make these projects better.** ⭐
+
+</div>
+
+---
+
+<details>
+<summary><b>🔧 Maintainer notes</b></summary>
+
+<br>
+
+All feedback for every project lands in **this one repo** as issues, sorted by the
+**Project** dropdown in the form. Each app deep-links straight to the form with its
+own project pre-selected:
 
 ```
 https://github.com/behnia137/feedback/issues/new?template=feedback.yml&project=BENIX+Theme+Studio
 ```
 
-To add a project: edit the `project` dropdown options in
-[`.github/ISSUE_TEMPLATE/feedback.yml`](.github/ISSUE_TEMPLATE/feedback.yml) and
-give that app a deep link with its own `&project=` value (URL-encode spaces as `+` or `%20`).
+The `project` query param matches the dropdown `id` in
+[`.github/ISSUE_TEMPLATE/feedback.yml`](.github/ISSUE_TEMPLATE/feedback.yml) and pre-selects that option.
+
+**To add a project:** add a line to the `project` dropdown options, then give that app a
+link with its own `&project=` value (URL-encode spaces as `+` or `%20`).
+
+</details>
