@@ -18,6 +18,7 @@ body:
       description: Pick the one this is about.
       options:
         - BENIX Theme Studio
+        - n8n Workflow Explorer
         # TODO: add your other projects here, one per line (plain text — keep it deep-link friendly)
         - Other / not listed
     validations:
