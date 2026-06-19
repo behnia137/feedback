@@ -1,0 +1,43 @@
+name: 💬 BENIX Theme Studio — feedback
+description: Report a bug or suggest an idea for BENIX Theme Studio
+title: "[Theme Studio] "
+labels: ["theme-studio"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### Thanks for helping make BENIX Theme Studio better 🙌
+        Just a few quick fields — no GitHub experience needed.
+        Screenshots or a short clip help a lot: drag them straight into **Tell me more**.
+  - type: dropdown
+    id: type
+    attributes:
+      label: 🏷️ What kind of feedback?
+      options:
+        - 🐞 Bug — something's broken or looks wrong
+        - 💡 Idea — a feature or improvement
+        - ❓ Question — how does this work?
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: ✍️ Tell me more
+      description: What happened, or what would you like to see? For a bug, what did you *expect* vs. what actually happened?
+      placeholder: |
+        Example
+        ───────
+        When I export a theme, the accent color looks different in Power BI than in the preview.
+        • Expected: the same color as the preview
+        • Saw: a slightly darker shade
+        • Browser / OS: Chrome on Windows 11
+    validations:
+      required: true
+  - type: input
+    id: contact
+    attributes:
+      label: 📫 Contact (optional)
+      description: Email or handle if you'd like a reply. Leave blank to stay anonymous.
+      placeholder: you@example.com
+    validations:
+      required: false
