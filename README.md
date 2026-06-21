@@ -47,26 +47,3 @@ Every project I build links here, so this is the **one place** for all of it —
 **Thanks for helping make these projects better.** ⭐
 
 </div>
-
----
-
-<details>
-<summary><b>🔧 Maintainer notes</b></summary>
-
-<br>
-
-All feedback for every project lands in **this one repo** as issues, sorted by the
-**Project** dropdown in the form. Each app deep-links straight to the form with its
-own project pre-selected:
-
-```
-https://github.com/behnia137/feedback/issues/new?template=feedback.yml&project=BENIX+Theme+Studio
-```
-
-The `project` query param matches the dropdown `id` in
-[`.github/ISSUE_TEMPLATE/feedback.yml`](.github/ISSUE_TEMPLATE/feedback.yml) and pre-selects that option.
-
-**To add a project:** add a line to the `project` dropdown options, then give that app a
-link with its own `&project=` value (URL-encode spaces as `+` or `%20`).
-
-</details>
